@@ -1,0 +1,75 @@
+ /*declare on element, this case root=highest element you can select*/
+
+ /*similar to selecting html element*/
+
+ :root {
+     --base: yellow;
+     --spacing: 10px;
+     --blur: 10px;
+ }
+
+ img {
+     /*When using variable on css use var(--) ex: var(--spacing);*/
+     padding: var(--spacing);
+     background: var(--base);
+     filter: blur(var(--blur));
+ }
+
+ h1 {
+     color: var(--base);
+ }
+
+ h2 {
+     margin: auto;
+ }
+
+ /*
+      misc styles, nothing to do with CSS variables
+    */
+
+ body {
+     text-align: center;
+     background: red;
+     color: white;
+     font-family: 'helvetica neue', sans-serif;
+     font-weight: 100;
+     font-size: 50px;
+     width: min-content;
+ }
+
+ .controls {
+     margin-bottom: 50px;
+ }
+
+ input {
+     width: 100px;
+ }
+
+ @media screen and (max-width: 425px) {
+     input {
+         width: 100%;
+     }
+     body {
+         text-align: center;
+         background: red;
+         color: white;
+         font-family: 'helvetica neue', sans-serif;
+         font-weight: 100;
+         font-size: 50px;
+         flex-wrap: wrap;
+         display: grid;
+     }
+     .controls {
+         justify-content: center;
+         flex-wrap: wrap;
+         width: -webkit-fill-available;
+         display: grid;
+         margin-bottom: 50px;
+     }
+ }
+
+ @media screen and (min-width: 838px) {
+     body {
+         width: auto;
+     }
+ }
