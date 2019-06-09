@@ -52,6 +52,7 @@
 
  @media screen and (max-width: 425px) {
      input {
+         padding: 20px;
          width: 100%;
      }
      body {
