@@ -7,6 +7,7 @@
      --spacing: 10px;
      --blur: 10px;
      --background: black;
+     --font: #7fff00;
  }
 
  html {
@@ -35,7 +36,7 @@
  body {
      text-align: center;
      background: var(--background);
-     color: white;
+     color: var(--font);
      font-family: 'helvetica neue', sans-serif;
      font-weight: 100;
      font-size: 50px;
@@ -56,11 +57,6 @@
          width: 100%;
      }
      body {
-         text-align: center;
-         color: white;
-         font-family: 'helvetica neue', sans-serif;
-         font-weight: 100;
-         font-size: 50px;
          flex-wrap: wrap;
          display: grid;
      }
